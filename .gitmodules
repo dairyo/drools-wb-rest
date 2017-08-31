@@ -1,0 +1,9 @@
+[submodule "uberfire"]
+	path = uberfire
+	url = ../uberfire.git
+[submodule "drools-wb"]
+	path = drools-wb
+	url = ../drools-wb.git
+[submodule "kie-wb-distributions"]
+	path = kie-wb-distributions
+	url = ../kie-wb-distributions.git
