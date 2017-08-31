@@ -1,9 +1,0 @@
-[submodule "kie-wb-distributions"]
-	path = kie-wb-distributions
-	url = git@github.com:shinsuke-nara/kie-wb-distributions.git
-[submodule "uberfire"]
-	path = uberfire
-	url = git@github.com:shinsuke-nara/uberfire.git
-[submodule "drools-wb"]
-	path = drools-wb
-	url = git@github.com:shinsuke-nara/drools-wb.git
