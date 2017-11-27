@@ -1,22 +1,24 @@
 #!/bin/sh
 
-USER_NAME=test
+USER_NAME=test2
+#ENDPOINT="http://192.168.50.51:8080/drools-wb/rest/user"
+ENDPOINT="http://localhost:8080/drools-wb/rest/user"
 
 # create user.
 curl -v -X POST -u "rest:rest123" \
   -H "Content-Type:application/json" -H "Accept: application/json" \
-  "http://localhost:8080/drools-wb/rest/user" \
+  "${ENDPOINT}" \
   -d "${USER_NAME}"
 
 # assign a role.
 curl -v -X PUT -u "rest:rest123" \
   -H "Content-Type:application/json" -H "Accept: application/json" \
-  "http://localhost:8080/drools-wb/rest/user/roles/${USER_NAME}" \
+  "${ENDPOINT}/roles/${USER_NAME}" \
   -d '["analyst"]'
 
 # assign password.
 curl -v -X PUT -u "rest:rest123" \
   -H "Content-Type:application/json" -H "Accept: application/json" \
-  "http://localhost:8080/drools-wb/rest/user/password/${USER_NAME}" \
+  "${ENDPOINT}/password/${USER_NAME}" \
   -d 'password'
 

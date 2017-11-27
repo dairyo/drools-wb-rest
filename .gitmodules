@@ -7,3 +7,6 @@
 [submodule "kie-wb-distributions"]
 	path = kie-wb-distributions
 	url = ../kie-wb-distributions.git
+[submodule "droolsjbpm-knowledge"]
+	path = droolsjbpm-knowledge
+	url = git@github.com:shinsuke-nara/droolsjbpm-knowledge.git
